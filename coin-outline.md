@@ -1,4 +1,5 @@
 Top-level opinion: "Ephys hardware development should be largely open-source. This benefits end-users who want better tools, and developer-scientists who need new tech to answer their science questions."
+
 Target audience: Scientists, division-of-labor proponents, closed-source model proponents
 
 1. Introduction
