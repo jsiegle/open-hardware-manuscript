@@ -1,0 +1,49 @@
+## Neural ensemble communities: Open-source approaches to hardware for large scale recording
+
+Siegle JH, Hale G, Newman JP, Voigts J
+
+
+Imagine the following scenario: a scientist is preparing to test a new hypothesis, but he lacks the expertise required to carry out the necessary experiments. Rather than invest time and money hiring people who do, he decides to outsource these efforts to companies that can provide finished results and figures. Their products are expensive, but their high quality and polish mean he won't have to spend time altering them for publication. Nor will he be able to; the results are sold as-is, without providing access to the data or code required to check their validity or re-run the analyses with different parameters. Each company sells slightly different products, which enables the scientist to choose the results that agree most closely with his hypothesis. The selection is limited, however, so he may be forced to adjust his ideas to fit the available offerings. Furthermore, the results from different companies may be incompatible with one another. Once he chooses which ones to buy, his future hypotheses will be "locked in" to those prior results—unless he's willing to pay handsomely for more congruous results from another company.
+
+This situation seems shocking because it doesn't agree with the spirit of basic scientific research. Hypotheses should be evaluated through an iterative, distributed process, rather than on the basis of results bought from a company. But the scenario above is analogous to the typical means of hardware distribution in many scientific fields: rather than expending effort building the tools necessary to carry out their research, scientists are happy to treat them as "black box" commodities that can be purchased but not modified. In the majority of cases, this improves efficiency by allowing researchers to focus on the science at hand. But there are certain instances in which such a model hinders progress. When technical development outpaces the progression of scientific ideas, researchers are forced to build or modify their own experimental tools in order to gain the upper hand. In such a competitive environment, it may seem counterproductive to develop techniques the same way we develop hypotheses. But when flexibility, transparency, and affordability are essential to scientific advancement, researchers stand to benefit from conducting technical development out in the open, rather than behind closed doors.
+
+In this article, we examine the role that open-source can play for extracellular electrophysiology, a widely used technique in neuroscience. Extracellular recording electrodes were one of the earliest tools for investigating brain function, and are now one of the most rapidly evolving. We believe that the community of scientists that rely on this method would do well to support a more open approach to technical development. The recent wave of open-source tools for electrophysiology provide a useful starting point{CITATIONS}. More importantly, though, novel platforms for collaborative design and affordable manufacturing make such a model feasible for the first time. Below, we present arguments for and against the need for open-source hardware for high-channel-count electrophysiology, which also apply to other neuroscientific techniques.
+
+# Electrophysiology is well-suited for an open development model
+
+Recording electrical signals from the brain is a straightforward proposition. In the simplest case, it only requires two conductors to measure a potential difference, a means of amplifying that difference, and some method to store changes in the amplified signal over time. The technologies necessary for doing just that have been around for over a century, with signals recorded on spools of paper{CITATION}. Today, mass-produced circuits costing a few dollars can be used to amplify neural signals and store them digitally{CITATION}. In recent years, there has been a push to simultaneously record from more channels with even tighter spacing, in order to better understand the brain at the network level{CITATION}. This requires application-specific hardware tailored to suit the needs of electrophysiologists.
+
+For the most part, advances in recording technology occur within individual labs. Commercial entities then take these advances, optimize them for general usability, and distribute them to the wider community. The resulting data acquisition systems are typically monolithic, in that all the parts are designed by the same company, and closed, in that the hardware designs and source code are not publicly available. Some of the major vendors of commercial data acquisition systems are Neuralynx, Plexon, Blackrock, Tucker-Davis Technologies, Ripple, and Axona [any others to add???]. By giving researchers access to high-quality, professionally tested tools, as well as reliable support services, these companies have been essential to the spread of multichannel electrophysiology systems over the past two decades. However, it is no longer clear that these services should be provided exclusively by commercial entities.
+
+We see three reasons why the current model of tool development and distribution is ripe for disruption:
+
+1. Electrode technology is advancing rapidly. Experimenters using twisted-wire tetrodes are packing more wires into a smaller area{CITATIONS}; silicon probes are becoming thinner and denser{CITATIONS}; and active probes are under development{CITATIONS}. Researchers need the flexibility to choose the option that is best-suited to their particular application, but vendor lock-in can prevent this. Companies have trouble keeping up with the latest advances, and when they do, they implement proprietary standards that Balkanize the field. One recent example is the development of amplifier chips from Intan technologies, which can amplify and digitize 32 channels of neural data in an 8 x 8 mm package. When integrated into a "headstage" (the temporary interface that connects implanted electrodes to a data acquisition system), systems based on Intan chips offer considerable advantages over their analog counterparts. For this reason, nearly every major vendor now sells headstages that use Intan chips for digitization, but none of them are interchangeable. Users are stuck with whatever connectors the vendors have chosen to provide, and cannot customize them without the help of the manufacturer.
+
+2. On the software side, the requirements for analysis and visualization vary greatly from researcher to researcher, and even from experiment to experiment. Specialized algorithms are needed to handle electrophysiological data once it reaches the computer, especially when closed-loop feedback is involved. It's often difficult for researchers to predict which algorithms will be necessary before the experiments have been run. An example of this is online spike-sorting, which allows researchers to probe the response properties of single units near their recording electrode. Certain commercial software may or may not implement this, and they may all use different algorithms. This makes it difficult or impossible to directly compare data collected across different platforms.
+
+3. There is already a huge amount of development going on within each lab. Electrophysiologists tend to be technically savvy and favor a "do it yourself" approach to their work. Some of this is cultural, but much of it is out of necessity. The limiting nature of the commercially available systems has forced many electrophysiologists to take matters into their own hands, and develop customized hardware and software for their experiments. Unfortunately, very little of this development is shared, leading to a huge amount of redundant effort within and across laboratories.
+
+These reasons, which are not unique to extracellular electrophysiology, make it likely that a shift toward a more open development model will occur in the near future.
+
+# Open interfaces: a middle-of-the-road solution
+
+Common standards with a modular architecture, with development shared between companies and labs
+Still room for black boxes, as long as we have open interfaces
+Allows researchers to choose their path, and have more options at each point
+Software is the same way, and is just as crucial
+On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well.
+
+# Examples of open-source approaches
+
+---
+
+# Pros and cons of the open-source model
+
+---
+
+# Conclusion
+
+---
+
+
+

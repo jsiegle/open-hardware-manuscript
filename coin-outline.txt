@@ -1,21 +1,26 @@
 I. Introduction
 
-A. The nature of basic science justifies the use of open-source tools (perhaps exclusively?)
+Tell a nice little story about "buying" results
+
+The nature of basic science justifies the use of open-source tools (perhaps exclusively?)
 - Researchers need flexibility to follow scientific questions as they arise
 - Replicability requires transparency
 - Budgets are tight, yo!
--- This is especially true of 'small' labs that are currently excluded from 'high-tech' neuroscience research because they cannot shell out 50k for a multichannel data acquisition system, even when budgets are not that tight. For instance labs in 'developing' countries (most of NeuroRighter's users are in China and India, for instance).
 
-B. Electrophysiology can especially benefit from open-source
+Overview of the paper
+
+II. Body
+
+A. Electrophysiology can especially benefit from open-source
 - The technology is simple; we've known how to efficiently amplify and digitize electrical signals for decades
 - What's changing rapidly is the front-end (what do we put in the brain?) and the software (what type of information to we extract from the signals?); not feasible for companies to keep up with the cutting edge; EXAMPLE: optogenetics
 - Ephys labs tend to be technically savvy; TONS of development going on behind-the-scenes; almost none of this is shared with the wider community
 
-C. Ideal situation: common standards and modular architecture, with development shared between companies and labs
+B. Ideal situation: common standards and modular architecture, with development shared between companies and labs
 - Still a role for commercial entities to refine and distribute tools; but currently they lag, rather than lead, technology development
 - Software is also key—determines how "open" the hardware actually is; i.e., how easy it is for the end-user to modify its functionality
 
-D. Why is this happening now?
+C. Why is this happening now?
 - There have been a number of attempts at creating a widely used multichannel system. 
 -- A/D (1990's)
 -- MEABench (2005)
@@ -29,7 +34,7 @@ D. Why is this happening now?
 -- Cheap computation for use in huge numbers of embeeded devices that simply were not around at the time of A/D or even MEABench (smart phones, smart cars, smart toasters, ...)
 -- The explosion of the open-source hardware movement in general. 
 --- Started with PIC
---- Reigns taken by Arduino
+--- Reins taken by Arduino
 --- Now there is an explosion: raspberry pi, Beaglebone, maple, etc.
 -- The explosion of tools for 'social design'
 --- Github and git are the best example
@@ -37,7 +42,7 @@ D. Why is this happening now?
 
 - Together, all this means that the processing tools are (1) faster, and (2) easier to use, for (3) less money than ever before. There are shit-loads of tools for collaborative design. And, proper documentation is _expected_ in serious open-source projects. 
 
-E. Pros/cons of the open-source model
+D. Pros/cons of the open-source model
 
 - User support
 -- Forum based support can be more responsive than dedicated support used by industry, but only if a critical mass of competent users are reached.
@@ -49,9 +54,11 @@ E. Pros/cons of the open-source model
 -- No question on this one.
 - Polish
 -- Depends on the project. Also, some people don't like not being able to see whats going on. (e.g. what the hell is going on with the pulse-pal pcb. my good, im glad the thing works because looking at the pcb i would not guess it does...)
+- Price
+-- This is especially true of 'small' labs that are currently excluded from 'high-tech' neuroscience research because they cannot shell out 50k for a multichannel data acquisition system, even when budgets are not that tight. For instance labs in 'developing' countries (most of NeuroRighter's users are in China and India, for instance).
 
 
-II. Conclusion
+III. Conclusion
 
 Open should be the rule for large-scale recording, rather than the exception
 If we can convince scientists and companies to support open standards, we'll spend less time on redundant hardware and software development
