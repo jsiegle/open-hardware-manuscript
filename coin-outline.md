@@ -1,15 +1,16 @@
-I. Introduction
+Top-level opinion: "Ephys hardware development should be largely open-source. This benefits end-users who want better tools, and developer-scientists who need new tech to answer their science questions."
 
-Tell a nice little story about "buying" results
+Target audience: Scientists, division-of-labor proponents, closed-source model proponents
 
-The nature of basic science justifies the use of open-source tools (perhaps exclusively?)
-- Researchers need flexibility to follow scientific questions as they arise
-- Replicability requires transparency
-- Budgets are tight, yo!
+1. Introduction
 
-Overview of the paper
+ - Scientific need creates demand for better recording (v.a.v. channel density, sig quality, motion tracking, stim, & realtime analys)
+ - Need is typically met by companies focusing on tech. Business model is proprietary / subscription-based, source closed
+ - Open-source dev has benefits (cross-checking, cost, synergistic work), but limited by know-how and access to big fab
+ - New fab tech, maker movement, and collaborative platforms removed the limits; scientist-lead tech dev >= companies'; time to embrace open source & enjoy the benefits
+ - ?(Optional) Competition between labs drove purchase of tech from companies in past. Now collaborative sense in open-source dev may spill into open-access science/data, with largely overlapping benefits to those from open source software
 
-II. Body
+2. Body
 
 A. Electrophysiology can especially benefit from open-source
 - The technology is simple; we've known how to efficiently amplify and digitize electrical signals for decades
@@ -58,7 +59,7 @@ D. Pros/cons of the open-source model
 -- This is especially true of 'small' labs that are currently excluded from 'high-tech' neuroscience research because they cannot shell out 50k for a multichannel data acquisition system, even when budgets are not that tight. For instance labs in 'developing' countries (most of NeuroRighter's users are in China and India, for instance).
 
 
-III. Conclusion
+3. Conclusion
 
 Open should be the rule for large-scale recording, rather than the exception
 If we can convince scientists and companies to support open standards, we'll spend less time on redundant hardware and software development
