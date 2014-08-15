@@ -44,12 +44,21 @@ The same principle applies to the software used to record data.
 While there have been efforts to standardize file formats recently{CITE}, the actual software currently is monolithic and tied to specific hardware.
 This is becoming problematic for the same reasons that we need modular open-source hardware for: Higher channel counts require new data-processing during, not after the recording, and closed loop experiments.
 
-
 On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well. There have been notable efforts in this direction {CITE} but as a whole the field is not doing nearly enough.
 
-#2C Examples of open-source approaches
+#2C Examples of open-source approaches - why now?
 
----
+There have been a number of attempts at creating a widely used multichannel electrophysiology system:A/D (1990's), MEABench (2005), NeuroRighter (2009 - present), ArtE (2010? - present), Open-ephys (2011 - present).
+The adoption of these systems has gone from modest for the first versions (10's of users) to many hundreds of users and distribution comparable to commercial systems. What drove this increased adoption of open source tools?
+
+There are a few key factors that recently allowed open source tools to rival and in some areas surpass the functionality of their commerical counterparts. First of, thanks to their openness, all of the listed systems were to some degree built on and inproving upon each-other's designs. In parallel, development that are not directly to neuroscience contributed to the increasing quiality of open-source tools:
+-- Hardware standardization improved (examples?).
+-- Driven by smart phones, cheap embedded computation and miniaturized components became available.
+-- The explosion of the open-source hardware movement made it easy to learn electronics design, and to get help. This movement started with PIC, lead to the expansion of Arduino- associated hardware and software and is now expanding to encompass a variety of highly powerful platform such as the raspberry pi, Beaglebone, maple, etc.
+-- The explosion of tools for 'social design', with collaborative design tools like Github and git.
+--- Wikis for documentation
+
+- Together, all this means that the processing tools are (1) faster, and (2) easier to use, for (3) less money than ever before. There are shit-loads of tools for collaborative design. And, proper documentation is _expected_ in serious open-source projects. 
 
 #2D Pros and cons of the open-source model
 
