@@ -14,7 +14,7 @@ In this article, we examine the role that open-source development can play in ex
 
 Extracellular recording electrodes were one of the earliest tools for investigating brain function, and are now one of the most rapidly evolving. We believe that the community of scientists using these methods is ideally positioned to benefit from an open approach to technical development. The recent wave of open-source tools for electrophysiology provide a useful starting point{CITATIONS}. Most importantly, novel platforms for collaborative design and affordable standardized manufacturing make such a model feasible for the first time. Below, we present arguments for and against the need for open-source hardware for high-channel-count electrophysiology, which also apply to other neuroscientific techniques.
 
-# Electrophysiology is well-suited for an open development model
+#2A Electrophysiology is well-suited for an open development model
 
 Recording electrical signals from the brain is a straightforward proposition. In the simplest case, it only requires two conductors to measure a potential difference, a means of amplifying that difference, and a method to store changes in the amplified signal over time. The  necessary technologies have been around for over a century, with signals recorded on spools of paper{CITATION}. Today, mass-produced circuits costing a few dollars can be used to amplify neural signals and store them digitally{CITATION}.
 
@@ -32,7 +32,7 @@ We see three reasons why the current model of tool development and distribution 
 
 These reasons, which are not unique to extracellular electrophysiology, make it likely that a shift toward a more open development model will occur in the near future.
 
-# Open interfaces: a middle-of-the-road solution
+#2B Open interfaces: a middle-of-the-road solution
 
 We propose that an open approach to hardware and software development that centers around standardized, open interfaces and modular architecture could greatly improve the productivity of the scientific community.
 
@@ -47,15 +47,15 @@ This is becoming problematic for the same reasons that we need modular open-sour
 
 On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well. There have been notable efforts in this direction {CITE} but as a whole the field is not doing nearly enough.
 
-# Examples of open-source approaches
+#2C Examples of open-source approaches
 
 ---
 
-# Pros and cons of the open-source model
+#2D Pros and cons of the open-source model
 
 ---
 
-# Conclusion
+#3 Conclusion
 
 ---
 
