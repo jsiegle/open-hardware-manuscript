@@ -34,11 +34,18 @@ These reasons, which are not unique to extracellular electrophysiology, make it 
 
 # Open interfaces: a middle-of-the-road solution
 
-Common standards with a modular architecture, with development shared between companies and labs
-Still room for black boxes, as long as we have open interfaces
-Allows researchers to choose their path, and have more options at each point
-Software is the same way, and is just as crucial
-On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well.
+We propose that an open approach to hardware and software development that centers around standardized, open interfaces and modular architecture could greatly improve the productivity of the scientific community.
+
+This model does not conflict with the business model of commercial systems vendors. There is no reason why labs should pay any less the huge amount of technical expertise built by makers of commercial systems than they do now. However, in a model where system components are modular, well documented, and interchangeable, companies could diversify and concentrate their resources on the development of novel equipment, in collaboration with scientists that either require new tools, or already have prototypes that aren't ready for distribution. Additionally, standardized equipment should give rise to an even bigger market for professional support for existing systems, similar to how companies sell support for Linux based systems rather than selling the software itself.
+
+There is also no fundamental reason why all components of scientific tools would need to be completely open source either. All current scientific tools make heavy use of 'black boxes' in the form of well documented integrated circuits that perform specified functions ranging from amplifiers and filters up to FPGAs and processors. As long as the behavior of a component is well defined, and its interfaces are documented and adhere to standards wherever possible, closed-source components are not necessarily an obstacle to the functionality of the whole system. The key requirement is that tools need to allow researchers to choose their path, and have options at each point.
+
+The same principle applies to the software used to record data. 
+While there have been efforts to standardize file formats recently{CITE}, the actual software currently is monolithic and tied to specific hardware.
+This is becoming problematic for the same reasons that we need modular open-source hardware for: Higher channel counts require new data-processing during, not after the recording, and closed loop experiments.
+
+
+On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well. There have been notable efforts in this direction {CITE} but as a whole the field is not doing nearly enough.
 
 # Examples of open-source approaches
 
