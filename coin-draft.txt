@@ -32,21 +32,7 @@ We see three reasons why the current model of tool development and distribution 
 
 These reasons, which are not unique to extracellular electrophysiology, make it likely that a shift toward a more open development model will occur in the near future.
 
-#2B Open interfaces: a middle-of-the-road solution
-
-We propose that an open approach to hardware and software development that centers around standardized, open interfaces and modular architecture could greatly improve the productivity of the scientific community.
-
-This model does not conflict with the business model of commercial systems vendors. There is no reason why labs should pay any less the huge amount of technical expertise built by makers of commercial systems than they do now. However, in a model where system components are modular, well documented, and interchangeable, companies could diversify and concentrate their resources on the development of novel equipment, in collaboration with scientists that either require new tools, or already have prototypes that aren't ready for distribution. Additionally, standardized equipment should give rise to an even bigger market for professional support for existing systems, similar to how companies sell support for Linux based systems rather than selling the software itself.
-
-There is also no fundamental reason why all components of scientific tools would need to be completely open source either. All current scientific tools make heavy use of 'black boxes' in the form of well documented integrated circuits that perform specified functions ranging from amplifiers and filters up to FPGAs and processors. As long as the behavior of a component is well defined, and its interfaces are documented and adhere to standards wherever possible, closed-source components are not necessarily an obstacle to the functionality of the whole system. The key requirement is that tools need to allow researchers to choose their path, and have options at each point.
-
-The same principle applies to the software used to record data. 
-While there have been efforts to standardize file formats recently{CITE}, the actual software currently is monolithic and tied to specific hardware.
-This is becoming problematic for the same reasons that we need modular open-source hardware for: Higher channel counts require new data-processing during, not after the recording, and closed loop experiments.
-
-On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well. There have been notable efforts in this direction {CITE} but as a whole the field is not doing nearly enough.
-
-#2C Examples of open-source approaches - why now?
+#2B Examples of open-source approaches - why now?
 
 There have been a number of attempts at creating a widely used multichannel electrophysiology system:A/D (1990's), MEABench (2005), NeuroRighter (2009 - present), ArtE (2010? - present), Open-ephys (2011 - present).
 The adoption of these systems has gone from modest for the first versions (10's of users) to many hundreds of users and distribution comparable to commercial systems. What drove this increased adoption of open source tools?
@@ -59,6 +45,21 @@ There are a few key factors that recently allowed open source tools to rival and
 --- Wikis for documentation
 
 - Together, all this means that the processing tools are (1) faster, and (2) easier to use, for (3) less money than ever before. There are shit-loads of tools for collaborative design. And, proper documentation is _expected_ in serious open-source projects. 
+
+#2C Open interfaces: a middle-of-the-road solution
+
+We propose an open approach to hardware and software development that centers around standardized interfaces and modular architecture. If it's embraced by both researchers and commercial suppliers, it could greatly improve the productivity of the scientific community.
+
+There is no reason to circumvent the technical expertise accumulated by commercial tool developers. In a model where system components are modular, well documented, and interchangeable, companies could diversify and concentrate their resources on the development of novel equipment, in collaboration with scientists that either require new tools, or already have prototypes that aren't ready for distribution. Additionally, standardized equipment should give rise to an even bigger market for professional support for existing systems, similar to how companies sell support for Linux based systems rather than selling the software itself.
+
+There is also no fundamental reason why all components of scientific tools would need to be completely open source either. All current scientific tools make heavy use of 'black boxes' in the form of well documented integrated circuits that perform specified functions ranging from amplifiers and filters up to FPGAs and processors. As long as the behavior of a component is well defined, and its interfaces are documented and adhere to standards wherever possible, closed-source components are not necessarily an obstacle to the functionality of the whole system. The key requirement is that tools need to allow researchers to choose their path, and have options at each point.
+
+The same principle applies to the software used to record data. 
+While there have been efforts to standardize file formats recently{CITE}, the actual software currently is monolithic and tied to specific hardware.
+This is becoming problematic for the same reasons that we need modular open-source hardware for: Higher channel counts require new data-processing during, not after the recording, and closed loop experiments.
+
+On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well. There have been notable efforts in this direction {CITE} but as a whole the field is not doing nearly enough.
+
 
 #2D Pros and cons of the open-source model
 
