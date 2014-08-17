@@ -32,23 +32,34 @@ We see three reasons why the current model of tool development and distribution 
 
 These reasons, which are not unique to extracellular electrophysiology, make it likely that a shift toward a more open development model will occur in the near future.
 
-#2B Examples of open-source approaches - why now?
+#2B A brief history of open-source approaches
 
-There have been a number of attempts at creating a widely used multichannel electrophysiology system:A/D (1990's), MEABench (2005), NeuroRighter (2009 - present), ArtE (2010? - present), Open-ephys (2011 - present).
-The adoption of these systems has gone from modest for the first versions (10's of users) to many hundreds of users and distribution comparable to commercial systems. What drove this increased adoption of open source tools?
+The development of custom tools has always been a fact of life in extracellular electrophysiology. Sometimes it's done out of necessity, when commercial suppliers simply do not exist; other times it's done out of principle, to provide peace of mind to researchers who want to know how their tools work at every level. Since the widespread adoption of multichannel recording techniques, there have been several attempts to develop open-source recording platforms that are polished enough and sufficiently well documented to propagate beyond the labs that invented them.
 
-There are a few key factors that recently allowed open source tools to rival and in some areas surpass the functionality of their commerical counterparts. First of, thanks to their openness, all of the listed systems were to some degree built on and inproving upon each-other's designs. In parallel, development that are not directly to neuroscience contributed to the increasing quiality of open-source tools:
--- Hardware standardization improved (examples?).
--- Driven by smart phones, cheap embedded computation and miniaturized components became available.
--- The explosion of the open-source hardware movement made it easy to learn electronics design, and to get help. This movement started with PIC, lead to the expansion of Arduino- associated hardware and software and is now expanding to encompass a variety of highly powerful platform such as the raspberry pi, Beaglebone, maple, etc.
--- The explosion of tools for 'social design', with collaborative design tools like Github and git.
---- Wikis for documentation
+In the early 1990s, A/D... (someone should ask Matt about this to get the history right).
 
-- Together, all this means that the processing tools are (1) faster, and (2) easier to use, for (3) less money than ever before. There are shit-loads of tools for collaborative design. And, proper documentation is _expected_ in serious open-source projects. 
+Should we mention the large time gap? Or are there tools we don't know about?
+2005 - MEABench – Jon should write this
+2009 - NeuroRighter - Jon should also write this
+Should we mention Soma?
+2010 - ArtE - Greg should write this
+
+The public release of integrated amplifier chips by Intan Technologies in 2009?{CITATION} made it possible to circumvent the National Instruments analog-to-digital conversion hardware that was a part of all the previous platforms. The co-founders of the Open Ephys initiative, Josh Siegle and Jakob Voigts, designed a system based on these chips, with reduced price and complexity. The development and promotion of open interfaces by Intan (RHD2000 SPI protocol and Rhythm FPGA firmware) made the process much simpler by reducing the number of design decisions and making their tools compatible with pre-existing hardware and software from Intan. The low price to manufacture each acquisition board (~$700 per unit in bulk), allowed Open Ephys to distribute the tools widely in a short period of time. There are currently over 80 labs with Open Ephys hardware.
+
+What drove this increased adoption of open source tools? There are a few key factors that have recently allowed open-source tools to rival (and in some ways, surpass) the functionality of their commercial counterparts. First of, thanks to their openness, all of the listed systems were to some degree built upon and improving upon each-other's designs. ArtE was inspired by the efforts of NeuroRighter, and the Open Ephys software began as a graphical interface for ArtE. Different requirements caused these systems to diverge, but there is no reason that they couldn't be made cross-compatible, or continue to benefit from cross-pollination of ideas.
+
+[This paragraph needs to be made more coherent and logical:]
+In parallel to this, developments not directly related to neuroscience contributed to the increasing quality of open-source tools.
+
+1. Smaller, cheaper hardware. Market forces are pushing for ever smaller and cheaper processors and other components that are contained in cellular phones and portable devices. When these become publicly available, they simplify the design process for neuroscientists.
+
+2. Tools for collaborative design. The rise of the Internet, which led to an explosion of tools for "social design." GitHub is a website that makes it easy for researchers to collaboratively develop software and hardware, based on the powerful git software written by Linus Torvalds, the creator of Linux. Wikis allow documentation to be distributed across the community, and to be updated instantly. On a more mundane level, email and video conferencing make it more common to trust developers that one hasn't ever met in person. 
+
+3. The open-source hardware movement. Products like Arduino, Raspberry Pi, and Beaglebone make it easy to harness high-powered embedded computations at a low price, and low barrier to entry. Many neuroscientists get their start in hardware design using simple platforms like Arduino, and then graduate to more powerful systems. They also set a precedent for what good open-source design should be: simple to comprehend, highly adaptable, and well-documented.
 
 #2C Open interfaces: a middle-of-the-road solution
 
-We propose an open approach to hardware and software development that centers around standardized interfaces and modular architecture. If it's embraced by both researchers and commercial suppliers, it could greatly improve the productivity of the scientific community.
+Taking cues from these widely adopted open-source platforms, we propose an open approach to hardware and software development for extracellular electrophysiology that centers around standardized interfaces and modular architecture. If it's embraced by both researchers and commercial suppliers, it could greatly improve the productivity of the scientific community.
 
 There is no reason to circumvent the technical expertise accumulated by commercial tool developers. In a model where system components are modular, well documented, and interchangeable, companies could diversify and concentrate their resources on the development of novel equipment, in collaboration with scientists that either require new tools, or already have prototypes that aren't ready for distribution. Additionally, standardized equipment should give rise to an even bigger market for professional support for existing systems, similar to how companies sell support for Linux based systems rather than selling the software itself.
 
