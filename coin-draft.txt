@@ -59,26 +59,55 @@ In parallel to this, developments not directly related to neuroscience contribut
 
 #2C Open interfaces: a middle-of-the-road solution
 
-Taking cues from these widely adopted open-source platforms, we propose an open approach to hardware and software development for extracellular electrophysiology that centers around standardized interfaces and modular architecture. If it's embraced by both researchers and commercial suppliers, it could greatly improve the productivity of the scientific community.
+Taking cues from these widely adopted open-source platforms, we propose an open approach to hardware and software development for extracellular electrophysiology that centers around standardized interfaces and modular architecture. If it's embraced by both researchers and commercial suppliers, it could greatly improve the productivity of the scientific community. The essence of this proposal is that the most common interfaces (e.g. electrode-to-headstage, headstage-to-cable, data-to-computer) become standardized, so that anyone can make tools that fit into the pipeline. This is what already exists in many other ecosystems, such as audio recording, where microphones, analog-to-digital converters, and processing software can all come from different companies, yet all work together seamlessly.
 
-There is no reason to circumvent the technical expertise accumulated by commercial tool developers. In a model where system components are modular, well documented, and interchangeable, companies could diversify and concentrate their resources on the development of novel equipment, in collaboration with scientists that either require new tools, or already have prototypes that aren't ready for distribution. Additionally, standardized equipment should give rise to an even bigger market for professional support for existing systems, similar to how companies sell support for Linux based systems rather than selling the software itself.
+[CREATE A FIGURE FOR THIS – JAKOB???]
 
-There is also no fundamental reason why all components of scientific tools would need to be completely open source either. All current scientific tools make heavy use of 'black boxes' in the form of well documented integrated circuits that perform specified functions ranging from amplifiers and filters up to FPGAs and processors. As long as the behavior of a component is well defined, and its interfaces are documented and adhere to standards wherever possible, closed-source components are not necessarily an obstacle to the functionality of the whole system. The key requirement is that tools need to allow researchers to choose their path, and have options at each point.
+There is no reason to circumvent the technical expertise accumulated by commercial tool developers. In a model where system components are modular, well documented, and interchangeable, companies could diversify and concentrate their resources. Rather than developing and supporting entire systems, they could focus on making the highest-quality components within a modular system. This development could be done in collaboration with scientists that come up with ideas for require new tools, or already have prototypes that aren't ready for distribution. Additionally, standardized equipment should give rise to an even bigger market for professional support for existing systems, similar to how companies sell support for Linux based systems rather than commoditizing the software itself.
 
-The same principle applies to the software used to record data. 
-While there have been efforts to standardize file formats recently{CITE}, the actual software currently is monolithic and tied to specific hardware.
-This is becoming problematic for the same reasons that we need modular open-source hardware for: Higher channel counts require new data-processing during, not after the recording, and closed loop experiments.
+There is also no fundamental reason why all components of electrophysiology systems need to be open source either. Even the most "open" tools make heavy use of "black boxes" in the form of well-documented, but closed-source integrated circuits. These circuits perform specified functions ranging from amplifiers and filters up to FPGAs and processors. As long as the behavior of a component is well defined, and its interfaces are documented and adhere to standards wherever possible, closed-source components are not necessarily an obstacle to the functionality of the whole system. The key requirement is that tools need to allow researchers to choose their path, and have options at each point.
 
-On the analysis end, we have the opposite situation; most people write their own analysis code, and none of it is vetted by companies; it's all open, and optional to share; would be nice to move toward a middle ground here as well. There have been notable efforts in this direction {CITE} but as a whole the field is not doing nearly enough.
+The same principle applies to the software used to visualize and record data streaming from the hardware. Currently, the software provided by commercial companies is tied to specific hardware. There is no general-purpose software for neuroscience experiments, which leads to a huge amount of redundancy and lock-in. For the same reasons that we need modular hardware, modular software will become crucial in coming years. Higher channel counts demand that processing be done in real time, and many experiments would benefit from closed-loop processing. If there's no standard interface for this, researchers will end up replicating the same code many times for many different platforms. And the more processing that is done in real time, the more difficult it will be to compare the results of experiments collected on different platform.
 
 
 #2D Pros and cons of the open-source model
 
----
+Actually, none of this is very clear-cut. We can't really divide it up into pros and cons
+
+PRICE
+- Open-source is cheaper in principle, since you can build it from raw materials
+- But development costs may be high (especially when you factor in time spent); no economies of scale if you're building a one-off system (examples?)
+- Sometimes open-source systems are the only choice, especially in labs with low budgets, or those that do not specialize in ephys
+
+SUPPORT
+- Commercial systems offer the advantage of guaranteed support, but how well does this work in practice?
+- With open-source, support can be distributed throughout the community, but obviously this depends on the size and engagement of the community
+
+DOCUMENTATION
+- Wiki-style approach is very powerful (example: Open Ephys and NeuroRighter)
+- But unless someone is in charge, this can be messy and disorganized
+- HOWEVER, are there any examples of commercial systems with great docs?
+
+PERFORMANCE
+- Again, commercial systems are generally perceived to be higher-quality
+- However, often the components are identical, so it's not clear where this quality comes from (example of Intan chips)
+- We recommend benchmarking everything yourself
+
+FLEXIBILITY
+- Open-source systems clearly win in this case, but often require lots of expertise to actually contribute
+- Best-case scenario would be the open interfaces described above – researchers could mix and match different elements of the pipeline, and make adjustments to only the parts that are necessary to change for their experiment
 
 #3 Conclusion
 
----
+[Taken from outline]:
+Open should be the rule for large-scale recording, rather than the exception
+If we can convince scientists and companies to support open standards, we'll spend less time on redundant hardware and software development
+There is a place for closed-source hardware, but scientists should demand openness wherever possible, especially when it comes to areas that are rapidly transforming
+Closed-source is OK, however, as long as you know how to interface with it (and the interfaces are at the right level of abstraction)
+We are not opposed to closed-source tools, only ones that hinder progress (what are our criteria for this, exactly?)
+
+Key takeaway: open tools will ultimately result in less time spent on development, but only if they are actively promoted and financially supported by the labs/funding agencies that benefit from them
+
 
 
 
