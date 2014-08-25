@@ -1,0 +1,48 @@
+## Questions for Daniel Wagenaar Concerning MEABench
+
+- When was the MEABench project started?
+
++ 1999
++ 'open-source' was not a widely used term then. Some people knew about 'free software'.
+
+- What inspired you to create MEABench?
+
++ Needed a system capable of real-time control. Commercial options would not work for this.
++ It was very hard to get the commercial software to output data in a usable format -- e.g. for post processing in matlab.
++ Wanted a modular data acquisition solution.
++ Wanted to have complete control over recording system
+
+- Where there any existing open source solutions when you started? I mean this in the loosest sense because dissemination software such as git and SVN were not widely used outside of the hardcore code world in the early 2000s. Were labs willing to share their 'custom' solutions at all (e.g. I know Bruce Wheeler did a fair bit tech development during that time.)
+
++ There was no way really to see them even if they existed. Daniel was not aware of any.
++ MEABench was created in the early days of the internet. Open-source projects were far less visible then.
++ Search engine: Alta vista
++ MCS was willing to share the specifications for their data acquisition cards, which were required to create the MEABench drivers.
+
+- What do you feel open source provides that (proprietary) commercial solutions do not? and vice-versa?
+
++ Pros:
+++ Can make the system do what you want without interacting with people who might have a different, non-performance oriented agenda
+++ Huge increase in the customize-ability of the system
+++ Interoperability, which is often not though about by commercial entities and is sometimes intentionally non-existent, is much more possible. This means that a diverse set of hardware can work together to perform complex experiments.
+
++ Cons:
+++ Huge amounts of effort creating a recording system, wastes a lot of time that could be spent on experiments
+++ Commercial options, with a paid staff, generally have products with more shine and better technical support.
+
+- How much was the hardware when you created MEABench (MEA, 60 Channel MCS amplifier,  128 channel MCS Card, Computer)
+
++ MEA: $400.00 each
++ Amplifier: ~$12,000.00
++ A/D card: ~$35,000.00 (original version had 64 channels. The 128 version was introduced in ~2006/7)
++ Computer: $2-3,000.00
++ Full system: ~$50,000 for 64 recording channels
+
+- Anything else about the system's history that comes to mind?
+
++ Beyond all the technical advantages associated with developing an open-source tool, there are less obvious benefits
+++ Open sourcing your work creates a community
+++ By talking with people interested in using your stuff, you end up talking about science rather than just about tools
+
++ Technology development (especially software development) is largely disregarded as a notable career achievement
+++ Publications are the most important, and software does not generally get publications (note: this is changing a bit with the open-source journals such as frontiers, but I certainly still agree that software definitely is under appreciated)
