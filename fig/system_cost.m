@@ -15,15 +15,26 @@ a1 = axes('unit','centimeters','position',[2 2 aw ah]);
 plot(a1, time, cost./chan_atcost,'ko-');
 xlabel('Year')
 ylabel('Cost/chan.')
-set(a1,'tickdir','out','box','off','Ylim',[5 5e3],'Xlim',[1991 2013],'YTick',[10 100 1000 10000],'YScale','log','TickLength',[0.1/aw 1])
+set(a1,'tickdir','out','box','off','Ylim',[10 5e3],'Xlim',[1991 2013],'YTick',[10 100 1000 10000],'YScale','log','TickLength',[0.1/aw 1])
 
 
 a2 = axes('unit','centimeters','position',[2 2+2+ah aw ah]);
 plot(a2, time, max_chan,'ko:');
 xlabel('Year')
 ylabel('Max chan.')
-set(a2,'tickdir','out','box','off','Ylim',[0 600],'Xlim',[1991 2013],'YScale','linear','TickLength',[0.1/aw 1], 'YAxisLocation','right')
+set(a2,'tickdir','out','box','off','Ylim',[0 600],'Xlim',[1991 2013],'YTick',[0 250 500],'YScale','linear','TickLength',[0.1/aw 1], 'YAxisLocation','right')
 
 export_fig(gcf,'-pdf','-transparent','system_cost.pdf')
 
-% Commercial options (TODO if we are actually going to pursue this idea)
+%% Commercial options (TODO if we are actually going to pursue this idea)
+
+
+%% Other events to include on timeline
+
+
+% Git introduced, 2005
+% Github, 2008
+% Intan chips introduce, 2009
+% Linux introduced, 1991
+% Arduino, 2005
+% OSH park, (source: @Laen)
