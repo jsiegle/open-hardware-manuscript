@@ -1,11 +1,11 @@
 % Plot of cost of commercial and OS options over time
 
 % Open source options
-sys             = {'AD'    'MB'     'NR'    'AE'    'OE'};%   'PG'};
-time            = [1992    2005     2009    2010    2012];%    2015];
-cost            = [100e3   65e3     10e3    10e3    2600];%    550 ];  % I'm not sure if these are correct. For instance, AE uses Neuralynx amps right - I would imagine those are not cheap for 128 chans.
-chan_atcost     = [48      64       96      128     128 ];%    32  ];
-max_chan        = [128     128      96      128     512 ];%    512 ]; % Technically PG and OE don't have maxs, because they can be daisy-chained. 
+sys             = {'AD'     'MB'     'NR'    'AE'    'OE'};%   'PG'};
+time            = [1992     2005     2009    2010    2012];%    2015];
+cost            = [64e3     65e3     10e3    10e3    2600];%    550 ];  % I'm not sure if these are correct. For instance, AE uses Neuralynx amps right - I would imagine those are not cheap for 128 chans.
+chan_atcost     = [64       64       96      128     128 ];%    32  ];
+max_chan        = [64       128      96      128     512 ];%    512 ]; % Technically A/D PG and OE don't have maxs, because they can be daisy-chained. NR is limited by the number of PCI slots available on average PC. Not sure about AE. 
 
 close all
 aw = 15;
