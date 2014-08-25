@@ -1,0 +1,28 @@
+## Some questions for Matt concerning the creation of A/D
+
+- When was the A/D project started?
++ Started in 1994
++ Prior to that, in Bruce McNaughton's lab, they were using a hacked commercial system based around commercial amplifiers similar to what would become NeuraLynx amps.
++ DataWave amplifiers and software were the first commercial spinoff from this system. This would become NeuraLynx after 'KC' (don't know if this name is right) was booted from the company, which he started.
++ The software Created in BM's lab was largely an in-house hack. A/D was to provide a more solid version of that software to control commercially supplied programmable gain amps and A/D cards
+
+- Why did you create A/D? What problems did A/D solve -- i.e. what did it allow that could not be bough commercially?
++ It was created because the closed-source version, created by DataWave called 'Discovery', was not manipulable enough
++ Further, DataWave was moving towards a more general GUI based acquisition solution that they thought would compete with labview. This system would target the windows OS, which at the time was not going to be capable of online data streaming and visualization for many tetrode recordings. This is why DOS was used.
++ Further, Matt was especially worried about some of the commercial hardware he was tied to. One anecdote is when the headstage manufacturer they were using were using was shutdown after they had returned thousands of dollars worth of non-functional hardware...
++ Take home: Being dependent on a commercial entity to for your scientific tools means that your destiny is largely determined by theirs (this closely mirrors Josh's existing intro).
+
+- What was the hardware like at the time? Were you using commercial amplifiers, or were the NeuraLynx amps created for system?
++ The NeuraLynx precursors were targeted targed by A/D. Each had 8 channels of programmable gain and required a separate A/D card and computer to acquire data.
+
+- What was the community like at the time? Were people sharing code and hardware ideas outside of formal publications? How?
++ There was no open-source community in the modern sense of the word
++ Although the code was used by other labs, it tended to be by invitation only
++ There was no way of policing the quality of modifications to the source code (e.g. no code reviews or self-organizing git repositories).
+
+- How much would you estimate the cost of the 48 channel A/D system used in the Science papers was? (Including acquisition computers and amplifiers)
+- Alternatively, how much per amplifier? How much per computer, how many channels per amp/computer?
++ Approximate costs: 3k/amp + 3k/computer + 2/ad card = 8k/8 channels = 64k for a 64 channel system.
+
+- Anything else about the system's history that comes to mind?
++ Loren Frank took over development of A/D after the low level hardware interfacing was taken care of. He helped with GUI and animal tracker stuff.

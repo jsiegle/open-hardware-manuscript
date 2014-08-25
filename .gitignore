@@ -4,3 +4,8 @@
 *.~*
 *~*
 *~$*
+
+# vim swap files
+
+.*.swo
+.*.swp
