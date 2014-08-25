@@ -1,4 +1,4 @@
-## Neural ensemble communities: Open-source approaches to hardware for large scale recording
+﻿## Neural ensemble communities: Open-source approaches to hardware for large scale recording
 
 Siegle JH, Hale G, Newman JP, Voigts J
 
@@ -44,7 +44,7 @@ Should we mention the large time gap? Or are there tools we don't know about?
 JPN - I'm going to interview Daniel Wagenaar and Bruce Wheeler, two of the early technically minded people in the planar MEA world, to see if they have any ideas about this. Are their others to talk to about the in vivo side of things. Its important to remember that during this time github etc did not exist, so code sharing was pretty ad hoc. I think mentioning this would be good because it indicates that the growth of infrastructure supporting open hardware and software mirrored the popularity of the idea in general.
 
 ## MEABench
-MEABench is a set of Linux command line programs for acquiring, processing, and saving multielectrode voltages from planar microelectrode arrays (MEAs). MEABench was created in 2005 by Daniel Wagenaar, Tom Demarse, and Steve Potter. Each MEABench program applies a single function, such as 'Filter' or 'Record', to a multichannel data stream. Each program uses standardized inter-process streaming interface, allowing programs to be daisy-chained and branched in order to construct complex signal processing arrangements. Although MEABench does not provide native support for closed-loop experiments, it can combined with real-time simulation tools~\citep{Wagenaar2002} using custom ‘glue’ programs to create feedback loops~\citep{Wagenaar2005}. MEABench has limited hardware driver support and currently only works with outdated and very expensive MCS data acquisition cards. However, the modularity and MEABench and reconfigurability of MEABench have inspired more modern, extensible, easy-to-use open-source solutions.
+MEABench is a set of Linux command line programs for acquiring, processing, and saving multielectrode voltages from planar microelectrode arrays (MEAs). MEABench was created in 2005 by Daniel Wagenaar, Tom Demarse, and Steve Potter. Each MEABench program applies a single function, such as 'Filter' or 'Record', to a multichannel data stream. Each program uses standardized inter-process streaming interface, allowing programs to be daisy-chained and branched in order to construct complex signal processing arrangements. Although MEABench does not provide native support for closed-loop experiments, it can combined with real-time simulation tools~\citep{Wagenaar2002} using custom ‘glue’ programs to create feedback loops~\citep{Wagenaar2005}. MEABench has limited hardware driver support and currently only works with outdated and very expensive MCS data acquisition cards. However, the modularity and reconfigurability of MEABench have inspired more modern, extensible, easy-to-use open-source solutions.
 
 ## NeuroRighter
 2009 - NeuroRighter - Jon should also write this
@@ -94,6 +94,7 @@ DOCUMENTATION
 - Wiki-style approach is very powerful (example: Open Ephys and NeuroRighter)
 - But unless someone is in charge, this can be messy and disorganized
 - HOWEVER, are there any examples of commercial systems with great docs?
+	+ TDT is not bad, but documentation is certainly not community driven and fixes are slow.
 
 PERFORMANCE
 - Again, commercial systems are generally perceived to be higher-quality
