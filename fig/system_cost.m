@@ -44,6 +44,10 @@ export_fig(gcf,'-pdf','-transparent','system_cost.pdf')
 % Intan chips introduce, 2009
 % Linux introduced, 1991
 % Arduino, 2005
-% OSH park, (source: @Laen)
+% OSH park accepts outside orders, 2012 (source: @Laen)
 % Google opens, 1998
 % Picaxe, ??
+% Creative commons, 2001
+% Open source initiative, 1998
+% Free software movement started by Richard Stallman, 1983
+% Free software foundation formed, 1985
