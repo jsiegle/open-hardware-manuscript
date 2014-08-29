@@ -4,9 +4,9 @@
 % Open source options
 sys             = {'AD'         'MB'        'NR'           'AE'        'OE'         'PG'};
 time            = [1994         1999.916    2008           2010.916    2012.083     2013.166];
-cost            = [64e3         50e3        9e3            48e3        2600       550 ];  % I'm not sure if these are correct. For instance, AE uses Neuralynx amps right - I would imagine those are not cheap for 128 chans.
-chan_atcost     = [64           64          96             128         128         32  ];
-max_chan        = [64           64          128            128         512         512 ]; % Technically A/D PG and OE don't have maxs, because they can be daisy-chained. NR is limited by the number of PCI slots available on average PC. Not sure about AE. 
+cost            = [64e3         50e3        9e3            48e3        2600         550 ];  % I'm not sure if these are correct. For instance, AE uses Neuralynx amps right - I would imagine those are not cheap for 128 chans.
+chan_atcost     = [64           64          96             128         128          32  ];
+max_chan        = [64           64          128            128         512          512 ]; % Technically A/D PG and OE don't have maxs, because they can be daisy-chained. NR is limited by the number of PCI slots available on average PC. Not sure about AE. 
 
 % Other events
 
@@ -22,8 +22,8 @@ max_chan        = [64           64          128            128         512      
 % Free software movement started by Richard Stallman, 1983
 % Free software foundation formed, 1985
 
-ev      = {'FSF'    'linux'  'Open-source initative' 'Google'       'Creative Commons'      'git'       'Arduino'   'Github'    'OSHpark' 'Raspberry Pi'    'BBB'       'Intan Analog'  'Intan Digital'     'open-gl'   'You-tube'};
-ev_time = [1985     1991     1998                    1998.75        2001                   2005         2005.083    2008.33     2012       2012.167          2013.33    2010.0          2012.916            1992.083    2005.167];  
+ev      = {'FSF'    'linux'  'Open-source initative' 'Google'       'Creative Commons'      'git'       'Arduino'   'Github'    'OSHpark' 'Raspberry Pi'    'BeagleBone'       'Intan Analog'  'Intan Digital'     'open-gl'   'You-tube'};
+ev_time = [1985     1991     1998                    1998.75        2001                   2005         2005.083    2008.33     2012       2012.167          2011.833           2010.0          2012.916            1992.083    2005.167];  
 [ev_time, idx] = sort(ev_time);
 ev = ev(idx);
 
