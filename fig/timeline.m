@@ -22,11 +22,10 @@ max_chan        = [64           64          128            128         512      
 % Free software movement started by Richard Stallman, 1983
 % Free software foundation formed, 1985
 
-ev      = {'FSF'    'linux'  'Open-source initative' 'Google'       'Creative Commons'      'git'       'Arduino'   'Github'    'OSHpark' 'Raspberry Pi'    'BeagleBone'       'Intan Analog'  'Intan Digital'     'open-gl'   'You-tube'};
-ev_time = [1985     1991     1998                    1998.75        2001                   2005         2005.083    2008.33     2012       2012.167          2011.833           2010.0          2012.916            1992.083    2005.167];  
+ev      = {'FSF'    'linux'  'Open-source initative' 'Google'       'Creative Commons'      'git'       'Arduino'   'Github'    'OSHpark' 'Raspberry Pi'    'BeagleBone'       'Intan Analog'  'Intan Digital'     'open-gl'   'You-tube' 'SVN'};
+ev_time = [1985     1991     1998                    1998.75        2001                   2005         2005.083    2008.33     2012       2012.167          2011.833           2010.0          2012.916            1992.083    2005.167   2000.833 ];  
 [ev_time, idx] = sort(ev_time);
 ev = ev(idx);
-
 
 %% Figure
 close all
