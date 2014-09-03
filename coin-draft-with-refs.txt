@@ -147,3 +147,5 @@ Figure 1 | Time-line of open-source multichannel electrophysiology development. 
 
 
 Figure 2 | Key interfaces within multichannel electrophysiology platforms. From the level of electrodes (left) to analysis software (right), more effort could be devoted to standardizing the interfaces between the various components. In this figure, the most important interfaces for large-scale electrophysiology are highlighted in blue; between them are examples of some of the wide array of options for the individual components.
+
+Overview of the main components and interfaces in multichannel electrophysiolgy systems. Some components and interfaces need to be diverse in order to fit different requirements, such as electrodes and their connectors. Others, such as interfaces for software plug-ins or the interfaces between recording hardware and software could be standardized with little or no additional development cost.
