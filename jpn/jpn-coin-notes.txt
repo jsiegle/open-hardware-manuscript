@@ -1,0 +1,20 @@
+JPN
+2014.09.03
+Notes on Coin Draft
+
+27: "Giving more resources to open-source initiatives in electrophysiology will lead to considerable productivity benefits for scientists—even those without an inclination toward engineering."
++ I don't fully understand this sentence
++ Who is giving this support
++ Can't an open-source initiative be self sustaining? 
++ Not a bad sentence, I just think its kind of a weak note to end the intro on.
+
+38: Companies that implement proprietary standards often prevent this. One recent example of this is the development of amplifier chips by Intan technologies
++ This makes it seem like Intan has proprietary connection standards, which it does not.
+
+84: "In a model where systems are modular, well documented, and interoperable, companies could concentrate their resources" 
++ This is a fragment
+
+REF 41: publication year is 2013.
+
+
+---
